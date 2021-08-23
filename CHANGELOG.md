@@ -3,22 +3,10 @@
 ## master
 
 ### Added
- - Added support for `pass` statement on `class` level
- - Added a possibility to disable linter checks in range from e.g. `# gdlint: disable=function-name` to `# gdlint: enable=function-name`
- - Added support for `puppet var`
- - Added string formatting according to `GDScript style guide` (`'x'` -> `"x"`, `'"'` -> `'"'`. `"'"` -> `"'"`, `'"\''` -> `"\"'"`)
- - Added linter option `tab-characters` that allows treating tabs as multiple characters while calculating line length
-
-### Fixed
- - Fixed comment persistence check
- - Improved comments handling
- - Improved utf08 support
- - Fixed type cast (e.g. `1 as String`) to always be in one line (this is forced by Godot's bug)
+ - Added some new GDScript `2.0` constructs to the core testcases
 
 ### Changed
- - Removed support for legacy (godot `3.1`) parenthesesless `assert` (e.g. `assert 1 == 1`) due to grammar conflict with modern (godot `3.2` assert)
- - exclamation-mark-based not-test expression will be now formatted without space (`!(1==1)` instead of `! (1==1)`) while for `not` the behaviour remains the same (`not (1==1)`)
- - Removed whitespace from `export (...)` - will be formatted as `export(...)` from now on
+ - Removed support for legacy (Godot `3.x`) GDScript from core testcases
 
 ## [3.2.8] 2020-09-15
 
